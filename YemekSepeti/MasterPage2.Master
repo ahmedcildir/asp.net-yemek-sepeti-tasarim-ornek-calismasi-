@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage2.master.cs" Inherits="YemekSepeti.MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Yemek sepeti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <style>
+body{
+background:#ffffff
+}
+@media (min-width: 1200px) { .container {
+    max-width: 1200px;
+} }
+</style>
+     <form id="form1" runat="server">
+      <nav class="navbar sticky-top navbar-expand-sm navbar-light "style="background-color:#b20202; navbar-dark  "> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+       <a class="navbar-brand" href="#"><image src="imege/yem.jpg"></image></a>
+      <div class="form-inline " action="/action_page.php">
+  </div>
+</nav>
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+ 
+
+<br>
+<div class="container">
+        
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+    
+
+    <%-- header baş --%>
+      <div class="card-header  w-100 ">
+           <div class="row justify-content-md-center">
+    <div class="col col-lg-3 col-md-4 col-sm-6">
+        <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="#fb8409">S.S.S. ve İşlem Rehberi</asp:LinkButton><br />
+        <asp:LinkButton ID="LinkButton4" runat="server" ForeColor="#fb8409" >Kullanıcı Sözleşmesi</asp:LinkButton><br />
+        <asp:LinkButton ID="LinkButton5" runat="server" ForeColor="#fb8409" >Aydınlatma Metni</asp:LinkButton><br />
+        <asp:LinkButton ID="LinkButton6" runat="server" ForeColor="#fb8409" >Bil.Toplumu Hizmetleri</asp:LinkButton>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6">
+       <asp:LinkButton ID="LinkButton7" runat="server" ForeColor="#fb8409" >İletişim</asp:LinkButton><br />
+        <asp:LinkButton ID="LinkButton8" runat="server" ForeColor="#fb8409" >Fırsatlar</asp:LinkButton><br />
+        <asp:LinkButton ID="LinkButton9" runat="server" ForeColor="#fb8409" >Restoran Portal</asp:LinkButton><br />
+        <asp:LinkButton ID="LinkButton10" runat="server" ForeColor="#fb8409" >Restoran Öner</asp:LinkButton>
+   
+    </div>
+    <div class="col col-lg-5  col-md-4 col-sm-6">
+       <asp:LinkButton ID="LinkButton11" runat="server" ForeColor="#fb8409"  >Mutfaklar & Zincir Restoranlar</asp:LinkButton><br />
+        <asp:LinkButton ID="LinkButton12" runat="server" ForeColor="#fb8409" >Hediyeler</asp:LinkButton><br />
+        <asp:LinkButton ID="LinkButton13" runat="server" ForeColor="#fb8409" >Mobil</asp:LinkButton><br />
+     
+    </div>
+     <div class="col col-lg-2 col-md-4 col-sm-6">
+     <a href="sehirsec.aspx"><button type="button" class="btn btn-warning ">
+         <asp:Label ID="labsehirAd" runat="server" Text="Label"></asp:Label> <span class="badge badge-light">
+             <asp:Label ID="labsehirNo" runat="server" Text="Label"></asp:Label></span>
+     <span class="sr-only">unread messages</span>
+     </button></a>
+    </div>
+  </div>
+
+  </div>
+    <div class="row">
+    <div class="col-lg-5 col-md-7 col-sm-12">
+
+        <font face="tahoma" size="1" >
+        <b>Görüş ve sorularınız için</b></font>
+        <asp:LinkButton ID="linkimeal"  runat="server"><font face="tahoma" size="1" ><b>info@yemeksepeti.com</b></font></asp:LinkButton> 
+        <font face="tahoma" size="1" ><b>adresine email gönderebilirsiniz.</b></font>
+    </div>
+    <div class="col-lg-4 col-md-5 col-sm-12" >
+        <asp:Image ID="Image2" runat="server" ImageAlign="Right"  ImageUrl="imege/ym2.jpg" />
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+         <asp:ImageButton ID="linkAppStore1" runat="server" ImageUrl="imege/ap1.jpg" OnClientClick="form1.target='_blank';"  PostBackUrl="https://itunes.apple.com/tr/app/yemeksepeti/id373034841?mt=8" />
+         <asp:ImageButton ID="linkpleystore1" runat="server" ImageUrl="imege/pl1.jpg" OnClientClick="form1.target='_blank';"  PostBackUrl="https://play.google.com/store/apps/details?id=com.inovel.app.yemeksepeti&feature=banner" />
+    </div>
+  </div>
+     <div class="row">
+    <div class="col-lg-5 col-md-6 col-sm-12">
+        <font face="tahoma" size="2" >
+        <b>Bizi Takip Edin:</b></font><asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="imege/fa.png" OnClientClick="form1.target='_blank';"  PostBackUrl="#" />
+         <asp:ImageButton ID="ImageButtontw" runat="server" ImageUrl="imege/tw.png" OnClientClick="form1.target='_blank';" PostBackUrl="#" />
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12" >
+        <asp:ImageButton ID="ImageButtonyemekcom" runat="server" ImageAlign="Right"  ImageUrl="imege/yemek.jpg" OnClientClick="form1.target='_blank';"  PostBackUrl="https://yemek.com/" />
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+          <asp:ImageButton ID="linkAppStore2" runat="server" ImageUrl="imege/ap2.jpg"  PostBackUrl="https://itunes.apple.com/tr/app/yemek-com-yemek-tarifleri/id1351326948" OnClientClick="form1.target='_blank';" />
+         <asp:ImageButton ID="linkpleystore2" runat="server" ImageUrl="imege/pl2.jpg" PostBackUrl="https://play.google.com/store/apps/details?id=com.yemeksepeti.yemekcom" OnClientClick="form1.target='_blank';"  />
+    </div>
+  </div>
+
+    <div class="card-header  w-100 ">
+         <div class="row">
+    <div class="col-sm">
+        <h4  align="center"> Telif Hakkı © 2018 AHMED ÇILDIR </h4>
+     
+    </div>
+        </div>
+    </div>
+
+</div>
+   </form>
+</body>
+</html>
+

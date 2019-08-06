@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage1.Master" AutoEventWireup="true" CodeBehind="mastrpeage3.master.cs" Inherits="YemekSepeti.mastrpeage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <div class="row">
+        <div class="col-lg-3">
+            
+
+         <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+          <img src="imege/prof.png" alt="..." class="img-thumbnail">
+          <asp:Label ID="Label1" runat="server" Text="Label">Ad Soyad</asp:Label>
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <font face="tahoma" size=1>DETAYLAR</font>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+         <li class="list-group-item"> <a href="www.ahmedcildir.com" class="card-link"><font face="tahoma" size="2" color="#fb8409">Bildirimlerim</font></a></li>
+         <li class="list-group-item"> <a href="#" class="card-link"><font face="tahoma" size="2" color="#fb8409">Profilim</font></a></li>
+         <li class="list-group-item"> <a href="#" class="card-link"><font face="tahoma" size="2" color="#fb8409">Siparişlerim</font></a></li>
+         <li class="list-group-item"> <a href="#" class="card-link"><font face="tahoma" size="2" color="#fb8409">Favorilerim</font></a></li>
+         <li class="list-group-item"> <a href="#" class="card-link"><font face="tahoma" size="2" color="#fb8409">Adreslerim</font></a></li>
+         <li class="list-group-item"> <a href="#"  class="card-link"><font face="tahoma" size="2" color="#fb8409">Ayarlarım</font></a></li>
+      </div>
+    </div>
+  </div>
+</div><br />
+        <div class="card   ">
+            <div class="card-header bg-danger  ">
+              YEMEK SEPETİM
+            </div>
+            <div class="card-body " >
+            <blockquote class="blockquote">
+                      <p><image src="imege/ym.jpg"</p>
+                         <footer class="blockquote-footer ">.........<cite title="Source Title">Sepetiniz henüz boş.</cite></footer>
+            </blockquote>
+            </div>
+        </div>
+  
+    
+        </div>
+        <div class="col-lg-9">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+<%-- <div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">
+          <font size="2">Sıralama : </font>
+          <asp:Button ID="Button1" class="btn btn-warning" runat="server" Text="Alfebetik"/>
+          <asp:Button ID="Button2" class="btn btn-outline-secondary" runat="server" Text="Restoran Puanı"/>
+      </th>
+    </tr>
+  </thead>
+</table>
+</div>
+    <div>
+            <span class="badge badge-success">9,99</span>
+            <asp:LinkButton ID="LinkButton2" runat="server">Restoran ismi</asp:LinkButton>
+            <image src="imege/cola.gif"></image>
+    </div>--%>
+        </div>
+    </div>
+</asp:Content>
